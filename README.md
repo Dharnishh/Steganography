@@ -82,12 +82,10 @@ pip install opencv-python
 ```
 steganography-project/
 │
-├── encrypt.py              # Script for embedding messages into images
-├── decrypt.py              # Script for extracting messages from images
-├── metadata.txt            # File containing password and message length
-├── Encryptedmsg.jpg        # Encrypted image with a hidden message
-├── README.md               # Project documentation
-└── requirements.txt        # List of dependencies
+├── stego.py                  
+├── download.jpg             
+├── Encryptedmsg.jpg          
+└── README.md                 
 ```
 
 ---
