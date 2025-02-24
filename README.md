@@ -30,27 +30,24 @@ Make sure you have Python installed. Then, install the required libraries using 
 pip install opencv-python
 ```
 
-### **Run the Encryption Script**
+### **Run the Script**
 1. Place the image you want to use in the same directory as the script.
 2. Run the encryption script:
    ```bash
-   python encrypt.py
+   python stego.py
    ```
 3. Follow the prompts:
    - Enter the image name with an extension (e.g., `Dinesh.jpg`).
    - Enter the secret message you want to hide.
    - Enter a password for encryption.
 
-4. The encrypted image will be saved as `Encryptedmsg.jpg`, and a metadata file (`metadata.txt`) will be created.
+4. The encrypted image will be saved as `Encryptedmsg.jpg` will be created.
 
-### **Run the Decryption Script**
-1. Run the decryption script:
-   ```bash
-   python decrypt.py
-   ```
-2. Follow the prompts:
-   - Enter the encrypted image name (e.g., `Encryptedmsg.jpg`).
-   - Enter the password for decryption.
+### **To Decrypt Data**
+
+5. Do you want to decrypt the message? (y/n):
+   - Enter y for execution of the script.
+   - Enter n to end the process. 
 
 3. If the password is correct, the hidden message will be displayed.
 
@@ -58,22 +55,18 @@ pip install opencv-python
 
 ## **Code Explanation**
 
-### **Encryption Script (`encrypt.py`)**
+### **Script (`stego.py`)**
 1. **Input Validation**:
    - Checks if the image file exists and if the message/password is provided.
 2. **Message Embedding**:
    - Uses pixel manipulation to embed the secret message into the image.
-3. **Metadata Creation**:
-   - Saves the password and message length in a `metadata.txt` file.
-4. **Saving Encrypted Image**:
+3. **Saving Encrypted Image**:
    - Saves the modified image as `Encryptedmsg.jpg`.
-
-### **Decryption Script (`decrypt.py`)**
-1. **Input Validation**:
-   - Checks if the encrypted image and metadata file exist.
-2. **Password Verification**:
+4. **Input Validation**:
+   - Checks if the decrypted image of the message is y/n.
+5. **Password Verification**:
    - Compares the entered password with the saved password.
-3. **Message Extraction**:
+6. **Message Extraction**:
    - Extracts the hidden message from the image using pixel manipulation.
 
 ---
@@ -99,13 +92,10 @@ steganography-project/
    - Password: `1234`
 2. Output:
    - Encrypted image: `Encryptedmsg.jpg`
-   - Metadata: `metadata.txt`
-
-### **Decryption**
-1. Input:
-   - Encrypted image: `Encryptedmsg.jpg`
+3. Input:
+   - Decrypted image: `Encryptedmsg.jpg`
    - Password: `1234`
-2. Output:
+4. Output:
    - Decrypted message: `Hello World`
 
 ---
