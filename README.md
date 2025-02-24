@@ -45,11 +45,11 @@ pip install opencv-python
 
 ### **To Decrypt Data**
 
-5. Do you want to decrypt the message? (y/n):
+Do you want to decrypt the message? (y/n):
    - Enter y for execution of the script.
    - Enter n to end the process. 
 
-3. If the password is correct, the hidden message will be displayed.
+If the password is correct, the hidden message will be displayed.
 
 ---
 
