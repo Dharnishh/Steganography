@@ -23,19 +23,14 @@ This project is a **Python-based steganography tool** that allows users to secur
 
 ## **How to Use**
 
-### **Step 1: Clone the Repository**
-Clone this repository to your local machine using the following command:
-```bash
-git clone https://github.com/your-username/steganography-project.git
-```
 
-### **Step 2: Install Dependencies**
+### **Install Dependencies**
 Make sure you have Python installed. Then, install the required libraries using pip:
 ```bash
 pip install opencv-python
 ```
 
-### **Step 3: Run the Encryption Script**
+### **Run the Encryption Script**
 1. Place the image you want to use in the same directory as the script.
 2. Run the encryption script:
    ```bash
@@ -48,7 +43,7 @@ pip install opencv-python
 
 4. The encrypted image will be saved as `Encryptedmsg.jpg`, and a metadata file (`metadata.txt`) will be created.
 
-### **Step 4: Run the Decryption Script**
+### **Run the Decryption Script**
 1. Run the decryption script:
    ```bash
    python decrypt.py
